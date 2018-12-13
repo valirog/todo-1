@@ -35,12 +35,19 @@ h1 {
     box-shadow: inset 0px 0px 6px -1px rgba(122,122,122,0.4);
 }
 
-#search::after {
+.search::after {
     content: "";
     clear: both;
     display: table;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    border-top: 1px solid grey;
+}
 
 .arrow-down {
     width: 60px;
@@ -63,7 +70,11 @@ input[type='text'] {
 }
 
 
-.list {
+/* .todo {
+    border-top: 1px solid grey;
+} */
+
+.todo-list {
     width: 100%;
     height: auto;
 }
@@ -102,10 +113,14 @@ input[type='checkbox'] {
 }
 .checkbox input[type='checkbox']:checked + label {
     background: url(img/inactive.svg);
+    
 }
 
+/*
+text-decoration: line-through;
+*/
 
-.circle-text {
+.todo-text {
     padding: 20px;
     width: 480px;
     height: 60px;
