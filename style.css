@@ -45,9 +45,11 @@ ul {
     list-style-type: none;
 }
 
-ul li {
-    border-top: 1px solid grey;
+.ul li {
+    height: 20px;
+    border-top: 1px solid gray;
 }
+
 
 .arrow-down {
     width: 60px;
@@ -71,6 +73,7 @@ input[type='text'] {
 
 
 /* .todo {
+    height: 50px;
     border-top: 1px solid grey;
 } */
 
@@ -95,6 +98,7 @@ input[type='text'] {
 input[type='checkbox'] {
     visibility: hidden;
 }
+
 .checkbox {
     width: 60px;
     height: 60px;
@@ -132,18 +136,25 @@ text-decoration: line-through;
     height: 60px;
     float: right;
     border: none;
-    font-size: 90px;
-    transform: scale(0.3);
+    font-size: 25px;
     cursor: pointer;
     color: #af2f2f;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*visibility: hidden;*/
 }
+
+
 
 .items-left {
     width: 100%;
     height: auto;
     padding: 20px;
     border-top: 1px solid #ededed;
+    
+}
+
+.items-left p {
+    font-size: 14px;
 }
